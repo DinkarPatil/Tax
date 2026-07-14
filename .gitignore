@@ -1,0 +1,24 @@
+node_modules
+.next
+out
+dist
+.env.local
+.env.*.local
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+.vscode
+.idea
+
+# Local embedded Postgres data (PGlite) — used when DATABASE_URL is unset.
+.data/
+
+/Backend/data/uploads
+
+# Secrets — root centralized env (never commit; use Vercel dashboard for cloud).
+.env
+.env.production
+
+# Playwright test artifacts.
+test-results/
+playwright-report/
